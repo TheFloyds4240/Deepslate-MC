@@ -7,7 +7,7 @@ if grep -q "setup=true" "deepslateconfig/setup.yml" &> /dev/null; then
 #echo "/_____/\___/\___/ .___/____/_/\__,_/\__/\___/_/  /_/\____/   "
 #echo "               /_/                                           "
 echo "Thank You For Using DeepslateMC1.17, Please Wait While We Make Sure You Are Up To Date"
-curl -o server.jar -z server.jar https://api.pl3x.net/v2/purpur/1.17.1/latest/download &> /dev/null
+curl -o server.jar -z server.jar https://api.pl3x.net/v2/purpur/1.18.1/latest/download &> /dev/null
 cd plugins
 curl -o Geyser-Spigot.jar -z Geyser-Spigot.jar https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar &> /dev/null
 curl -o floodgate-spigot.jar -z floodgate-spigot.jar https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar &> /dev/null
@@ -34,7 +34,7 @@ if grep -q "setup=false" "deepslateconfig/setup.yml" &> /dev/null; then
 #echo "               /_/                                           "
 echo "Thank You For Using DeepslateMC1.17, Please Wait While We Finish Setting Up Your Server"
 sed -i 's/  server-mod-name: Purpur/  server-mod-name: DeepslateMC/g' purpur.yml &> /dev/null
-curl -o server.jar -z server.jar https://api.pl3x.net/v2/purpur/1.17.1/latest/download &> /dev/null
+curl -o server.jar -z server.jar https://api.pl3x.net/v2/purpur/1.18.1/latest/download &> /dev/null
 cd plugins
 curl -o Geyser-Spigot.jar -z Geyser-Spigot.jar https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar &> /dev/null
 curl -o floodgate-spigot.jar -z floodgate-spigot.jar https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar &> /dev/null
@@ -74,7 +74,7 @@ echo "Thank You For Using DeepslateMC1.17, Please Wait While We Initialize Your 
 echo "Remember To Reboot Your Server After The Initialization So We Can Finish Setting It Up"
 echo "eula=true" &> eula.txt
 rm server.jar &> /dev/null
-curl -o server.jar https://api.pl3x.net/v2/purpur/1.17.1/latest/download &> /dev/null
+curl -o server.jar https://api.pl3x.net/v2/purpur/1.18.1/latest/download &> /dev/null
 mkdir plugins &> /dev/null
 cd plugins
 curl -o Geyser-Spigot.jar https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar &> /dev/null
