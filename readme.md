@@ -1,4 +1,4 @@
-DeepslateMC is a server solution designed to allow for easy cross play between Java and Bedrock Servers
+DeepslateMC is a bash script designed to allow for easy cross play between Java and Bedrock Servers
 While GeyserMC Does Exist, and is a wonderful program, it can sometimes be a pain to set up.
 So, we have fixed that by creating a script that will automatically setup Geyser and will automatically update your server software as well.
 We use both GeyserMC and Purpur in out project.
